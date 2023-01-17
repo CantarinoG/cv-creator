@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Info from "./components/Info";
 import Preview from "./components/Preview";
 
-import "./style.css";
+import "./styles/App.css";
 
 class App extends Component {
   render() {

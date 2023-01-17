@@ -5,6 +5,8 @@ import Experience from "./Experience";
 import Education from "./Education";
 import Actions from "./Actions";
 
+import "../styles/Info.css";
+
 class Info extends Component {
   render() {
     return (

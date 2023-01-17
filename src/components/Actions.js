@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "../styles/Actions.css";
+
 class Actions extends Component {
   render() {
     return (

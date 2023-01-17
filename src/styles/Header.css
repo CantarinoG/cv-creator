@@ -1,0 +1,6 @@
+.header h1 {
+    text-align: center;
+    margin: 8px;
+    font-family: var(--Montserrat);
+    color: black;
+}

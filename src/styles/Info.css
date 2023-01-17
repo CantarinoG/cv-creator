@@ -1,39 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Montserrat&display=swap');
-
-:root {
-    --Montserrat:'Montserrat', sans-serif;
-    --chivo: 'Chivo', sans-serif;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.header h1 {
-    text-align: center;
-    margin: 8px;
-    font-family: var(--Montserrat);
-    color: black;
-}
-
 .info {
     font-family: var(--chivo);
 }
 
-.info h2, .info input, .info button {
+.info h2, .info input, .info button{
     font-family: var(--Montserrat);
 }
 
-.info .personal, .info .experience, .info .education, .actions {
+.info .personal, .info .experience, .info .education{
     padding: 10px 20%;
     display: flex;
     flex-direction: column;
     font-size: 18px;
 }
 
-.info h2 {
+.info h2{
     margin: 10px 0;
     border-bottom: 1px solid gray;
 }
@@ -76,6 +56,7 @@
 }
 
 .info button {
+    color: black;
     background-color: transparent;
     border: 1px solid black;
     font-weight: bold;
@@ -92,17 +73,6 @@
 
 .info .del-btn:hover {
     background-color: rgb(182, 21, 21);
-}
-
-.actions button {
-    background-color: black;
-    color: white;
-    height: 30px;
-}
-
-.actions button:hover {
-    color: black;
-    background-color: transparent;
 }
 
 @media only screen and (max-width: 440px) {

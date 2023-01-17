@@ -1,0 +1,24 @@
+.preview h2 {
+    font-family: var(--Montserrat);
+}
+
+.preview {
+    padding: 10px 20%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.preview h2 {
+    margin: 10px 0;
+    border-bottom: 1px solid gray;
+}
+
+.preview .cv-container {
+    aspect-ratio: 7/10;
+    width: 100%;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+  
