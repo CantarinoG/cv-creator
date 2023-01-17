@@ -1,5 +1,7 @@
 .preview h2 {
     font-family: var(--Montserrat);
+    margin: 10px 0;
+    border-bottom: 1px solid gray;
 }
 
 .preview {
@@ -9,16 +11,63 @@
     font-size: 18px;
 }
 
-.preview h2 {
-    margin: 10px 0;
-    border-bottom: 1px solid gray;
-}
-
 .preview .cv-container {
     aspect-ratio: 7/10;
     width: 100%;
     border: 1px solid black;
     padding: 15px;
+    display: flex;
 }
 
+.preview .cv-main {
+    width: 70%;
+}
+
+.preview .cv-main {
+    padding: 0 15px 0 0;
+}
+
+.preview .cv-aside {
+    border: 2px solid black;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.preview img {
+    width: 100%;
+    height: 20%;
+}
   
+.preview h2 {
+    border: none;
+    font-size: 60px;
+}
+
+.preview h3 {
+    border-bottom: 1px solid gray;
+    
+}
+
+.preview h3, .preview h4 {
+    font-family: var(--Montserrat);
+    margin-top: 10px;
+}
+
+.preview h5 {
+    font-family: var(--chivo);
+    font-weight: 100;
+}
+
+@media print {
+    .preview .cv-container {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        border: 0;
+    }
+}
