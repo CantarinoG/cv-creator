@@ -4,10 +4,12 @@ import Header from "./components/Header";
 import Info from "./components/Info";
 import Preview from "./components/Preview";
 
+import "./style.css";
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Header/>
         <Info/>
         <Preview/>
