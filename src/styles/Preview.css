@@ -39,7 +39,7 @@
     height: 20%;
 }
   
-.preview h2 {
+.preview #cv-name {
     border: none;
     font-size: 60px;
 }

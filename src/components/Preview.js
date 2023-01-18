@@ -9,7 +9,7 @@ class Preview extends Component {
             <h2>Preview</h2>
             <div className="cv-container">
                 <main className="cv-main">
-                  <h2>John Doe</h2>
+                  <h2 id="cv-name">John Doe</h2>
                   <h3>Web Developer</h3>
                   <div className="cv-description">
                     <h3>Description</h3>
