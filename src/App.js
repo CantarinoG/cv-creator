@@ -36,6 +36,7 @@ class App extends Component {
     this.setEducation = this.setEducation.bind(this);
     this.deleteEducation = this.deleteEducation.bind(this);
 
+    this.reset = this.reset.bind(this);
   }
 
   setPersonalInfo(e){
@@ -135,11 +136,27 @@ class App extends Component {
     });
   }
 
+  reset() {
+    this.setState({
+      personal: {
+        fullName: "",
+        title: "",
+        address: "",
+        phoneNumber: "",
+        email: "",
+        description: ""
+      },
+      experienceList: [],
+      educationList: []
+    });
+  }
+
   render() {
     return (
       <div className="app">
         <Header/>
         <Info
+        personal={this.state.personal}
         setPersonalInfo={this.setPersonalInfo}
         experienceList={this.state.experienceList}
         addNewExperience={this.addNewExperience}
@@ -149,6 +166,7 @@ class App extends Component {
         addNewEducation={this.addNewEducation}
         setEducation={this.setEducation}
         deleteEducation={this.deleteEducation}
+        reset={this.reset}
         />
         <Preview
         personal={this.state.personal}
@@ -161,3 +179,5 @@ class App extends Component {
 }
 
 export default App;
+
+// TODO: Add Photo, generate pdf, reset

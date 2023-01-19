@@ -7,7 +7,7 @@ class Actions extends Component {
     return (
         <div className="actions">
             <button>Generate PDF</button>
-            <button>Reset</button>
+            <button onClick={this.props.reset}>Reset</button>
         </div>
     )
   }
