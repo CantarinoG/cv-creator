@@ -83,6 +83,14 @@
     font-size: 18px;
 }
 
+.info .del-btn {
+    width: 100%;
+}
+
+.info .dark-placeholder::placeholder {
+    color: black;
+}
+
 @media only screen and (max-width: 440px) {
     label[for="photo"] {
         display: flex;

@@ -17,8 +17,18 @@ class Preview extends Component {
                   </div>
                   <div className="cv-experience">
                     <h3>Experience</h3>
-                    <h4>2015 - Present | Senior Web Developer</h4>
-                    <h5>Facebook Inc., Menlo Park</h5>
+
+
+
+            
+                    {this.props.experienceList.map((experience, index) => {
+       return <div className="individual-experience" key={index}>
+              <h4>{experience.from} - {experience.to} | {experience.position}</h4>
+              <h5>{experience.company}, {experience.city}</h5>
+       </div>
+      })}
+
+
                   </div>
                   <div className="cv-education">
                     <h3>Education</h3>
