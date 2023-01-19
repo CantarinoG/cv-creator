@@ -27,7 +27,7 @@ class Preview extends Component {
                   </div>
                 </main>
                 <aside className="cv-aside">
-                  <img></img>
+                  <img/>
                   <h3>Personal Details</h3>
                   <h4>Address</h4>
                   <h5>Example Street 10</h5>

@@ -11,8 +11,8 @@ class Education extends Component {
             <div className="input-row"><AiFillEdit/><input type="text" placeholder="City"></input></div>
             <div className="input-row"><AiFillEdit/><input type="text" placeholder="Degree"></input></div>
             <div className="input-row"><AiFillEdit/><input type="text" placeholder="Subject"></input></div>
-            <div className="input-row"><label htmlFor="edu-from">From</label><input type="date" id="edu-from"></input></div>
-            <div className="input-row"><label htmlFor="edu-to">To</label><input type="date" id="edu-to"></input></div>
+            <div className="input-row"><label htmlFor="edu-from">From:</label><input type="text" id="edu-from" placeholder="Date"></input></div>
+            <div className="input-row"><label htmlFor="edu-to">To:</label><input type="text" id="edu-to" placeholder="Date"></input></div>
             <button className="del-btn">Delete</button>
             <button>Add</button>
         </div>
