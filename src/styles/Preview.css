@@ -37,6 +37,7 @@
 .preview img {
     width: 100%;
     height: 20%;
+    object-fit: cover;
 }
   
 .preview #cv-name {
@@ -57,6 +58,11 @@
 .preview h5 {
     font-family: var(--chivo);
     font-weight: 100;
+    word-wrap: break-word;
+}
+
+.no-pic {
+    display: none;
 }
 
 @media print {

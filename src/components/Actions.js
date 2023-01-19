@@ -6,7 +6,7 @@ class Actions extends Component {
   render() {
     return (
         <div className="actions">
-            <button>Generate PDF</button>
+            <button onClick={()=>{window.print()}}>Generate PDF</button>
             <button onClick={this.props.reset}>Reset</button>
         </div>
     )

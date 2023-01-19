@@ -44,7 +44,13 @@ class Preview extends Component {
                   </div>
                 </main>
                 <aside className="cv-aside">
-                  <img/>
+
+
+                {this.props.personal.photo ? <img alt="Profile" src={this.props.personal.photo}/> : <img className="no-pic" alt="Profile" src={this.props.personal.photo}/> }
+
+                  
+                  
+
                   <h3>Personal Details</h3>
                   <h4>Address</h4>
                   <h5>{this.props.personal.address}</h5>

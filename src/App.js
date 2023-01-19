@@ -18,7 +18,8 @@ class App extends Component {
         address: "",
         phoneNumber: "",
         email: "",
-        description: ""
+        description: "",
+        img: ""
       },
       experienceList: [],
       //{ position, company, city, from, to }
@@ -54,6 +55,8 @@ class App extends Component {
       currentPersonal.email = e.target.value;
     } else if (field === "Description"){
       currentPersonal.description = e.target.value;
+    } else if (e.target.id === "photo"){
+      currentPersonal.photo = URL.createObjectURL(e.target.files[0])
     }
     this.setState({
       personal: currentPersonal
@@ -144,7 +147,8 @@ class App extends Component {
         address: "",
         phoneNumber: "",
         email: "",
-        description: ""
+        description: "",
+        photo: ""
       },
       experienceList: [],
       educationList: []
