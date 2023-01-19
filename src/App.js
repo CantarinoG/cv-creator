@@ -183,5 +183,3 @@ class App extends Component {
 }
 
 export default App;
-
-// TODO: Add Photo, generate pdf, reset
