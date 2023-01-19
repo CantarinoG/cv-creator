@@ -11,7 +11,9 @@ class Info extends Component {
   render() {
     return (
         <div className="info">
-          <Personal/>
+          <Personal
+          setPersonalInfo={this.props.setPersonalInfo}
+          />
           <Experience/>
           <Education/>
           <Actions/>
