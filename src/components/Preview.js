@@ -32,8 +32,15 @@ class Preview extends Component {
                   </div>
                   <div className="cv-education">
                     <h3>Education</h3>
-                    <h4>2008 - 2010 | University of Technology, Oklahome</h4>
-                    <h5>Degree: Master<br></br>Subject: Science</h5>
+
+
+                    {this.props.educationList.map((education, index) => {
+       return <div className="individual-education" key={index}>
+              <h4>{education.from} - {education.to} | {education.university}, {education.city}</h4>
+              <h5>Degree: {education.degree}<br></br>Subject: {education.subject}</h5>
+       </div>
+      })}
+
                   </div>
                 </main>
                 <aside className="cv-aside">

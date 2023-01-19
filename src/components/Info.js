@@ -20,7 +20,12 @@ class Info extends Component {
           setExperience={this.props.setExperience}
           deleteExperience={this.props.deleteExperience}
           />
-          <Education/>
+          <Education
+          educationList={this.props.educationList}
+          addNewEducation={this.props.addNewEducation}
+          setEducation={this.props.setEducation}
+          deleteEducation={this.props.deleteEducation}
+          />
           <Actions/>
         </div>
     )

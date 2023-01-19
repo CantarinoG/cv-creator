@@ -27,9 +27,15 @@ class App extends Component {
     }
 
     this.setPersonalInfo = this.setPersonalInfo.bind(this);
+
     this.addNewExperience = this.addNewExperience.bind(this);
     this.setExperience = this.setExperience.bind(this);
     this.deleteExperience = this.deleteExperience.bind(this);
+
+    this.addNewEducation = this.addNewEducation.bind(this);
+    this.setEducation = this.setEducation.bind(this);
+    this.deleteEducation = this.deleteEducation.bind(this);
+
   }
 
   setPersonalInfo(e){
@@ -90,6 +96,45 @@ class App extends Component {
     });
   }
 
+  setEducation(e) {
+    const index = e.target.parentNode.parentNode.id;
+    const currentEducationList = this.state.educationList;
+    const currentEducation = currentEducationList[index];
+    if(e.target.classList.contains('university')){
+      currentEducation["university"] = e.target.value;
+    } else if(e.target.classList.contains('edu-city')){
+      currentEducation["city"] = e.target.value;
+    } else if(e.target.classList.contains('degree')){
+      currentEducation["degree"] = e.target.value;
+    } else if(e.target.classList.contains('subject')){
+      currentEducation["subject"] = e.target.value;
+    } else if(e.target.classList.contains('edu-from')){
+      currentEducation["from"] = e.target.value;
+    } else if(e.target.classList.contains('edu-to')){
+      currentEducation["to"] = e.target.value;
+    }
+    currentEducationList[index] = currentEducation;
+      this.setState({educationList: currentEducationList});
+  }
+
+  addNewEducation() {
+    const currentEducationList = this.state.educationList;
+    const emptyEducation = { university: "University", city: "City", degree: "Degree", subject: "Subject", from: "From", to: "To" };
+    currentEducationList.push(emptyEducation);
+    this.setState({
+      educationList: currentEducationList
+    });
+  }
+
+  deleteEducation(e) {
+    const index = e.target.parentNode.id;
+    const currentEducationList = this.state.educationList;
+    currentEducationList.splice(index, 1);
+    this.setState({
+      educationList: currentEducationList
+    });
+  }
+
   render() {
     return (
       <div className="app">
@@ -100,10 +145,15 @@ class App extends Component {
         addNewExperience={this.addNewExperience}
         setExperience={this.setExperience}
         deleteExperience={this.deleteExperience}
+        educationList={this.state.educationList}
+        addNewEducation={this.addNewEducation}
+        setEducation={this.setEducation}
+        deleteEducation={this.deleteEducation}
         />
         <Preview
         personal={this.state.personal}
         experienceList={this.state.experienceList}
+        educationList={this.state.educationList}
         />
       </div>
     )
