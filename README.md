@@ -1,49 +1,24 @@
-<details open>
-<summary>English</summary>
-<br>
+# CV Creator
 
-### CV Creator
+### Overview
 
-Project from [TheOdinProject](https://www.theodinproject.com/lessons/node-path-javascript-cv-application).
+This project is a web-based Curriculum Vitae (CV) generator built with React.js. Users can easily input their personal, professional, and educational information to generate a polished CV in PDF format. The application streamlines the process of creating a professional CV by providing an intuitive interface and customizable sections.
 
-Made with React.js.
+### Features
 
-This project is a Curriculum Vitae generator. The user inputs their information and the application generates them a Curriculum Vitae in .pdf format.
+- **Personal Information**: Add details like your name, title, address, and a brief description about yourself.
+- **Professional Experience**: Input as many job experiences as you want, specifying dates, company names, positions, and descriptions of your responsibilities and achievements.
+- **Educational Background**: Add multiple educational experiences, including dates, institutions, and subjects.
+- **Photo Upload**: Option to include a profile picture for a complete CV.
+- **PDF Export**: Automatically generates a downloadable CV in PDF format.
 
-The user can input personal information, such as name, title, address, description, etc.
+### How to Use
 
-There is a section where the user can input as many professional experiences as they want, specifying dates, company, position, etc.
+1. Fill out your personal information in the designated fields.
+2. Add as many professional and educational experiences as needed.
+3. Optionally, upload a profile picture to include in your CV.
+4. Preview your CV in real-time and export it as a PDF with a single click.
 
-There is also a section where the user can input as many educational experiences as they want, specifying dates, university, subject, etc.
+### Deployment
 
-The user can also include a picture.
-
-Deploy link: https://cantarinog.github.io/top-cv-creator/
-
-<br>
-</details>
-
-<details>
-<summary>Português</summary>
-<br>
-
-### Criador de CV
-
-Projeto do [TheOdinProject](https://www.theodinproject.com/lessons/node-path-javascript-cv-application).
-
-Feito com React.js.
-
-Esse projeto consiste em um gerador de Curriculum Vitae. O usuário insere suas informações e a aplicação gera um Curriculum Vitae em formato pdf.
-
-O usuário pode inserir informações pessoais, como nome, título, endereço, descrição, etc.
-
-Há uma seção onde o usuário pode inserir quantas experiências profissionais desejar, especificando datas, empresa, cargo, etc.
-
-Há também uma seção onde o usuário pode inserir quantas experiências educacionais desejar, especificando datas, instituição, curso, etc.
-
-O usuário também pode incluir uma foto.
-
-Link de deploy: https://cantarinog.github.io/top-cv-creator/
-
-<br>
-</details>
+Try out the live version here: [CV Creator](https://cantarinog.github.io/top-cv-creator/).
