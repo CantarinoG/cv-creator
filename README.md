@@ -21,4 +21,4 @@ This project is a web-based Curriculum Vitae (CV) generator built with React.js.
 
 ### Deployment
 
-Try out the live version here: [CV Creator](https://cantarinog.github.io/top-cv-creator/).
+Try out the live version here: [CV Creator](https://cantarinog.github.io/cv-creator/).
